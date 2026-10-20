@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI安全数字虚拟实验室</title>
@@ -190,14 +189,14 @@
 </head>
 <body>
 
-<canvas id="scene"></canvas>
+<canvas id="scene" data-engine="three.js r160" width="1930" height="1492" style="width: 965px; height: 746px; touch-action: none; cursor: grab;"></canvas>
 
 <div class="header">
   <h1>AI安全数字虚拟实验室</h1>
   <p>AI SECURITY VIRTUAL LAB</p>
 </div>
 
-<div id="labels"></div>
+<div id="labels"><div class="cube-label" style="display: block; transform: translate(-50%, 0px) translate(713.862px, 401.66px); opacity: 0.35;">模型与算法安全</div><div class="cube-label" style="display: block; transform: translate(-50%, 0px) translate(635.716px, 592.338px); opacity: 0.35;">数据与隐私安全</div><div class="cube-label" style="display: block; transform: translate(-50%, 0px) translate(299.909px, 543.409px); opacity: 0.35;">系统与基础设施安全</div><div class="cube-label" style="display: block; transform: translate(-50%, 0px) translate(236.759px, 454.805px); opacity: 0.35;">内容与生成安全</div><div class="cube-label" style="display: block; transform: translate(-50%, 0px) translate(377.163px, 329.975px); opacity: 0.35;">应用与场景安全</div><div class="cube-label" style="display: block; transform: translate(-50%, 0px) translate(562.399px, 368.392px); opacity: 0.35;">前沿与生存安全</div></div>
 
 <div id="modeBar">
   <button class="mode-btn active" data-mode="learn">学习模式</button>
@@ -210,7 +209,16 @@
   <div class="role-panel">
     <h2>数字实验室角色准入</h2>
     <p>SELECT YOUR ROLE TO ENTER THE LAB</p>
-    <div class="role-cards" id="roleCards"></div>
+    <div class="role-cards" id="roleCards"><div class="role-card">
+      <div class="rc-name">数字市民</div>
+      <div class="rc-level">体验模式 / 简单难度 ★☆☆☆☆</div>
+      <div class="rc-desc">适合普通公众入门体验，了解AI安全的基本概念与日常防范。</div></div><div class="role-card">
+      <div class="rc-name">AI 业务产品经理</div>
+      <div class="rc-level">进阶模式 / 中等难度 ★★★☆☆</div>
+      <div class="rc-desc">适合产品经理与业务运营，聚焦合规、风控与业务侧安全决策。</div></div><div class="role-card">
+      <div class="rc-name">极客安全架构师</div>
+      <div class="rc-level">专业模式 / 高难度 ★★★★★</div>
+      <div class="rc-desc">适合安全工程师与技术专家，深入底层原理、密码学与攻防细节。</div></div></div>
   </div>
 </div>
 
@@ -1025,5 +1033,6 @@ setTimeout(() => {
   }
 }, 5000);
 </script>
-</body>
-</html>
+
+
+</body></html>
